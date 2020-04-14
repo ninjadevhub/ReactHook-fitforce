@@ -1,0 +1,169 @@
+.trainers {
+  padding: 66px 0 220px;
+
+  @media screen and (max-width: 768px) {
+    padding: 27px 0 220px;
+  }
+
+  .trainers__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 58px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 20px;
+    }
+
+    .trainers__item {
+      padding: 38px;
+      width: 48.5%;
+      background: #fff;
+      box-shadow: 0 0 15px rgba(51, 51, 51, 0.2);
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      .trainers__main {
+        display: grid;
+        grid-template-areas:
+          'pic bio'
+          'pic geo';
+        grid-template-columns: 100px 1fr;
+        grid-column-gap: 26px;
+
+        @media screen and (max-width: 768px) {
+          grid-row-gap: 20px;
+          grid-template-columns: 60px 1fr;
+          grid-template-areas:
+            'pic bio'
+            'geo geo';
+        }
+
+        .trainers__pic {
+          grid-area: pic;
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          overflow: hidden;
+
+
+          .laterAvatr {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            background-color: #519beb;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+
+            @media screen and (max-width: 768px) {
+              width: 66px;
+              height: 66px;
+              font-size: 30px;
+
+            }
+          }
+
+
+          @media screen and (max-width: 768px) {
+            max-width: 66px;
+            height: 66px;
+          }
+
+          img {
+            max-width: 100%;
+            width: 100px;
+            object-fit: cover;
+          }
+        }
+
+        .trainers__bio {
+          grid-area: bio;
+
+          h5 {
+            font-size: 28px;
+            text-transform: capitalize;
+
+            @media screen and (max-width: 768px) {
+              font-size: 20px;
+            }
+          }
+
+          h6 {
+            font-size: 24px;
+
+            @media screen and (max-width: 768px) {
+              font-size: 20px;
+            }
+          }
+        }
+
+        .trainers__geo {
+          grid-area: geo;
+          font-size: 18px;
+          color: #a3a3a3;
+
+          @media screen and (max-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .trainers__spec {
+        font-size: 18px;
+
+        &:first-child {
+          margin: 36px 0 15px;
+
+        }
+
+        .specialities {
+          margin-right: 18px;
+
+          @media screen and (max-width: 768px) {
+            margin-right: 13px;
+          }
+        }
+
+        margin: 15px 0 15px;
+        display: flex;
+
+        &>div {
+          margin-left: 15px;
+        }
+
+        .trainers__spec_item {
+          font-weight: normal;
+        }
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+
+        span {
+          font-weight: 700;
+        }
+      }
+
+      .trainers__link {
+        font-size: 18px;
+        font-weight: 700;
+        color: #519beb;
+
+        @media screen and (max-width: 768px) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.coma {
+  color: #617288
+}
