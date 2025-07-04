@@ -8,6 +8,9 @@ import Footer from "./components/Footer";
 import Routes from "./Routes";
 
 import "./App.scss";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
 
 function App() {
   return (
